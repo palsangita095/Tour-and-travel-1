@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ---Aos css link---- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ------font cdn---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- -font awsm  cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ----link css-- -->
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+<!-- ----js link------ -->
+<script src="./js/register.js"></script>
+
+
+<!-- ----top header--------------------------------------- -->
+<div class="top-header">
+    <div class="top-header-child">
+        <ul class="top-header-contact">
+            <li><a href="tel:+919073173610"><i class="fa-solid fa-phone"></i>+919073173610</a></li>
+            <li><a href="mailto:"><i class="fa-solid fa-envelope"></i>sangitapal131@gmail.com</a></li>
+            <li><a href="kolkata"><i class="fa-solid fa-location-dot"></i>Kolkata</a></li>
+        </ul>
+        <ul class="top-header-icons">
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://x.com/i/flow/login"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- -----top header ends---- -->
+<!-- header section-------->
+<header class="header-section">
+    <div class="container">
+        <nav class="nav-bar">
+            <a href="index.html" class="logo"><img src="./image/logo nav final.png" alt="logo-image"></a>
+            <ul class="nav-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./package.html">Package</a></li>
+                <li><a href="./destination.html">Destination</a></li>
+                <li><a href="./guide.html">Guide</a></li>
+                <li><a href="#registerid" id="nav-contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-button">
+                <a href="#registerid" class="btn">Register</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- header section ends- -->
+<main>
+    <!-- -----banner section----------- -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-section-child">
+                <h1>Register Now --</h1>
+            </div>
+        </div>
+    </section>
+    <!-- -----banner section ends------ --> 
+<!-- ---register section ----------->
+      <section class="register-section com-gap" id="registerid">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                 <div class="offer">Mega Offer</div>
+                 <h2> <span class="colour">50% OFF on</span> selected packages!</h2>
+                 <h3 class="heading-4">Honeymoon Special: 30% OFF on romantic getaways!</h3>
+                 <h4>Family Vacation: Kids Travel Free on select family tours!</h4>
+                 <p> Adventure Package: Flat 25% OFF on trekking, safaris, and thrill tours!</p>
+                </div>
+                </div>
+                <div class="right">
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="right-text">
+                <h6 class="heading-2">Sign Up Now</h2>
+                </div>
+                <form method="get" action="#" onsubmit="return data(event) && alert('data saved successfully')">
+                    <input type="text" name="first-name" placeholder="Your Name" id="n6">
+                    <input type="tel" name="Number" placeholder="Your Phone Number" id="n7" pattern="[0-9]{10}" required>
+                    <input type="email" name="email" placeholder="Your Email" id="n8">
+                    <select name="destination" id="n9">
+                        <option value="" disabled selected>Select a Destination</option>
+                        <option value="india">India</option>
+                        <option value="america">America</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="rajasthan">rajasthan</option>
+                    </select>
+                    <input type="submit" value="Sign Up" id="n10">
+                </form>   
+            </div>
+        </div>
+            </div>
+        </div>
+        </div>
+      </section>
+<!-- ---register section ends ------>
+  <!-- -links section--------------------------------- -->
+  <section class="links-section">
+    <div class="container">
+        <div id="twitter">
+            <a href="https://x.com/i/flow/login" target="_blank" id="toggle1" class="twi"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div id="whatsapp">
+            <a href="https://web.whatsapp.com/" target="_blank" id="toggle1" class="wtsap"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div id="facebook">
+            <a href="https://www.facebook.com/" target="_blank" id="toogle1" class="fac"><i
+                    class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div id="instagram">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" id="toggle1"
+                class="ins"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+  </section>
+ <!-- -links section ends------------------------------ -->
+</main>
+<!----------------------- footer section -------------------------->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-child">
+            <div class="footer-one footer-two">
+                <a href="./index.html" class="logo-one"><img src="./image/logo nav final.png" alt="logo"></a>
+                <p>We are one of the prominent travel agencies that you can find around, arranging more than 1500
+                    trips successfully with best experience.</p>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/" class="facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="insta"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-one footer-two">
+                <div class="footer-one-para">Quick Links</div>
+                <ul class="footer-links-one">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./service.html">Service</a></li>
+                    <li><a href="./package.html">Package</a></li>
+                    <li><a href="./destination.html">Destination</a></li>
+                    <li><a href="./guide.html">Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-one footer-three">
+                <div class="footer-one-para">Useful Links</div>
+                <ul class="footer-links-one">
+                    <li><a href="#registerid">Register</a></li>
+                    <li><a href="./index.html">Contact Us</a></li>
+                    <li><a href="./index.html">Privacy Policy</a></li>
+                    <li><a href="./index.html">Refund Policy</a></li>
+                    <li><a href="./index.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one footer-three">
+                <div class="footer-one-para">Contact Details</div>
+                <ul class="footer-links-one">
+                    <li><a href="./index.html"><i class="fa-solid fa-location-dot"></i> 5/55, Jagadipota,kol-700152</a></li>
+                    <li><a href="mailto:"><i class="fa-solid fa-envelope"></i> sangitapal131@gmail.com</a></li>
+                    <li><a href="tel:+919073173610"><i class="fa-solid fa-phone"></i>+919073173610</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- -------------footer section--------------------------->
+ <hr>
+ <!--------------------bottom-footer ------>
+ <div class="bottom-footer">
+     <p>Copyright &copy;2025; Designed By <Span class="colour"> Sangita Pal</Span></p>
+ </div>
+ <!--------------------bottom-footer ends-->
+
+
+
+  <!-- aos js link -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- install Aos  -->
+  <script>
+     AOS.init();
+   </script>
+</body>
+</html>
