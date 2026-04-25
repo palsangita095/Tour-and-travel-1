@@ -1,0 +1,1364 @@
+/* --font import -- */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Dancing+Script:wght@400..700&family=Grand+Hotel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html,body{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+body{
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+/* common-class */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+:root{
+    --skyblue:#01bbbf;
+    --black:#000;
+    --green:rgba(24, 197, 24, 0.856);
+    --maroon:#FC0000;
+    --maruunone:#cc211bc1;
+    --white:#ffff;
+    --ass:rgba(74, 69, 69, 0.815);
+    --lightsky:#aae2f74c;
+    --blur:rgba(255, 255, 255, 0.793);
+    --blacknew:rgb(0, 0, 0);
+    --whatsapp:#25d366;
+    --insta:(#f9ce34, #ee2a7b,#6228d7);
+    --facebook:#3b5998;
+    --darkblack:#0d0d0d94;
+    --darkgreen:green;
+    --darkblue:rgba(10, 10, 37, 0.77);
+    --deepass:rgba(120, 112, 112, 0.088);
+    --transparent:rgba(255, 255, 255, 0.278);
+}
+.com-gap{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 40px;
+    background-color:var(--skyblue);
+    color:#ffff;
+    font-size: 14px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid var(--black);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color:var(--transparent);
+    color: var(--black);
+}
+section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+h1,.heading-1 {
+    font-size: 73px;
+    font-weight: 800;
+    margin: 0 0 20px;
+    line-height: 1.1;
+}
+
+h2,.heading-2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+h3,.heading-3 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+h4,.heading-4 {
+    font-size: 26px;
+    font-weight:500;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+h5,.heading-5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+h6,.heading-6 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+.colour{
+    color: var(--skyblue);
+}
+/* common-class ends */
+
+/* ---top header------------- */
+.top-header{
+    background-color: var(--ass);
+    padding: 10px 0;
+}
+.top-header-child{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.top-header-contact{
+    display: flex;
+}
+.top-header-contact a{
+    color: #ffff;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.top-header-contact a:hover{
+    color: var(--skyblue);
+}
+.top-header-contact i{
+    margin: 0 10px;
+}
+.top-header-icons{
+    display: flex;
+}
+.top-header-icons a{
+    color: #ffff;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.top-header-icons a:hover{
+    color:var(--skyblue);
+}
+/* ---top header ends---------- */
+/* ----header-section--- */
+.header-section{
+    position: absolute;
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+}
+.nav-items li a{
+    margin: 0 15px; 
+    color:var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#nav-guide{
+    color: var(--skyblue);
+}
+.nav-items li a:hover{
+    color: var(--skyblue);  
+}
+.logo{
+    display: block;
+    width: 220px;
+}
+.nav-items a{
+    position: relative;
+} 
+.nav-items a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    height: 2px;
+    width:0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s; 
+}
+.nav-items a:hover:before{
+    width: 70%; 
+}
+.nav-items a:before{
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    height: 1px;
+    width:0%;
+    right:0;
+    top: -2px;
+    transition: 0.3s; 
+}
+.nav-items a:hover:after{
+    width: 70%; 
+}
+.nav-items:hover{
+    color: var(--white)
+}
+
+/* ----header-section ends--- */
+/* -----banner section----------- */
+.banner-section{
+    background-image: url(../image/adventure-tour-on-the-theme-of-climbing-trekking-hiking-walking-or-vacation-with-forest-and-mountain-views-in-flat-nature-background-poster-illustration-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: calc(100vh - 200px );
+    background-blend-mode:darken;
+    background-color: var(--darkblack);
+    padding: 170px 0;
+}
+.banner-section h1{
+    color: var(--white);
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Dancing Script", cursive;
+}
+.banner-section-child{
+    display: flex;
+    justify-content: center;
+}
+/* --------banner-section ends------------ */
+/* ---------guide section----------------- */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -15px;
+}
+.guide-left,.guide-right {
+    width: 50%;
+    padding: 0 15px;
+}
+.guide-right h2{
+    margin-bottom: 30px;
+    color: var(--darkblue);
+    font-family: "Dancing Script", cursive;
+}
+.guide-right p{
+    margin-bottom: 30px;
+    color: var(--ass);
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.guide-text{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--skyblue);
+}
+.guide-items li {
+    font-size: 16px;
+    color: var(--ass);
+    margin-bottom: 2px;
+}
+
+/* ---------guide section section------------- */
+/* ---------guide card section---------------- */
+.card-section{
+    background-image: url(../image/Guide\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card-header-text h2{
+    text-align: center;
+    color: var(--darkblue);
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.card-header-text h3{
+    text-align: center;
+    color: var(--ass);
+    margin-bottom: 20px;
+}
+.card-header-text p{
+    text-align: center;
+    color: var(--ass);
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.card-section-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-one-image{
+    margin-bottom: 40px;
+}
+.card-one img{
+    display: block;
+}
+.card-one{
+    width: 100%;
+    max-width: 340px;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px var(--black); 
+}
+.social-icons{
+    display: flex;
+    position: absolute;
+    top: 59%;
+    left: 23%;
+}
+.social-icons a{
+    font-size: 20px;
+    margin-right: 5px;
+    padding: 8px 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--darkblue);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+.social-icons a:hover{
+    background-color: var(--white);
+    color: var(--skyblue);
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+.card-text h4{
+    color: var(--darkblue);
+    margin-bottom: 25px;
+
+}
+.card-text h5{
+    color: var(--ass);
+    margin-bottom: 20px;
+}
+.card-text p{
+    color: var(--ass);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ---------guide  card section ends------------ */
+/* -------------link section-------------------- */
+#whatsapp .wtsap{
+    position: fixed;
+    background-color: var(--whatsapp);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    bottom: 20%;
+    left: 2%;
+    padding: 3px 9px;
+}
+#facebook .fac{
+    position: fixed;
+    background-color: var(--facebook);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    bottom: 20%;
+    right: 2%;
+    padding: 3px 8px;
+}
+#instagram .ins{
+    position: fixed;
+    background-image: linear-gradient(#f9ce34, #ee2a7b,#6228d7);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    bottom: 32%;
+    left: 2%;
+    padding: 4px 9px;
+}
+#twitter .twi{
+    position: fixed;
+    background-color: var(--black);
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    bottom: 32%;
+    right: 2%;
+    padding: 3px 8px; 
+}
+/* -------------link section----------------- */
+/* ------footer section---------------------- */
+.footer-section{
+    background: linear-gradient(45deg,#c0c0aa,#1cefff);
+    padding: 100px 0;
+}
+.footer-one{
+    padding: 30px 10px;
+    width: 19%;
+}
+.logo-one{
+    display: block;
+    width: 130px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+.footer-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-one p{
+    color: var(--ass);
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.footer-links-one li{
+    margin: 0 0 5px;
+}
+.footer-links-one a{
+    font-size: 16px
+}
+.social-links li{
+    margin: 0 10px 0 0;
+}
+.social-links li a{
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-two i{
+    font-size: 20px;
+    color: var(--darkblue);
+}
+.footer-two i:hover{
+    color: var(--skyblue);
+}
+.footer-one a{
+   display: inline-block;
+   color: var(--ass);
+}
+.footer-one a:hover{
+    color:var(--white) ;
+ }
+.footer-one-para{
+    color: var(--darkblue);
+    font-size: 20px;
+    margin-bottom:40px;
+    font-weight: 800;
+    
+}
+.facebook{
+    padding: 10px 14px;
+}
+.insta {
+    padding: 10px;
+}
+.youtube {
+    padding: 10px 8px;
+}
+.whatsapp {
+    padding: 10px;
+}
+
+/* ------footer section ends--------- */
+/* ------bottom-footer-------------- */
+.bottom-footer{
+    padding: 10px 0;
+    background-color: var(--ass);
+}
+.bottom-footer p{
+   font-size: 14px;
+   text-align: center;
+   color: var(--white);
+   font-weight: 500;
+   line-height: 1.2;
+}
+/* ------bottom-footer ends----------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+
+
+@media (min-width:320px) and (max-width:575.98px) {
+
+/* ---top header------------- */
+.top-header{
+    padding: 20px 0;
+}
+.top-header-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-header-contact a{
+    font-size: 11px;
+    margin-right: 8px;
+}
+.top-header-contact{
+    margin-bottom: 10px;
+}
+.top-header-contact i{
+    margin: 0 5px;
+}
+.top-header-icons a{
+    font-size: 11px;
+    margin-right: 8px;
+}
+/* --------top header ends----------- */
+/* ----header-section--- */
+.header-section{
+    padding: 10px 0;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.nav-items{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nav-items li a{
+    margin: 0px 0px; 
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-items li{
+    margin-bottom: 5px;
+}
+.logo{
+    width: 170px;
+}
+.btn{
+    padding: 5px 20px;
+    font-size: 12px;
+ }
+/* ----header-section ends--- */
+/* -----banner section----------- */
+.banner-section{
+    padding: 280px 0;
+    height: 10vh;
+}
+.banner-section-child h1{
+    font-size: 35px;
+    margin-top: 180px
+}
+/* -----banner section ends-------- */
+/* ------guide section----------- */
+.guide-section{
+    padding: 30px 0;
+}
+.row{
+    flex-direction: column;
+}
+.guide-left {
+    width: 90%;
+    margin-bottom: 50px;
+}
+.guide-right{
+    width: 80%;
+}
+.guide-right h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.guide-right p{
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+.guide-text{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.guide-items li{
+    font-size: 10px;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+/* ---------guide section section------------- */
+
+/* ---------guide  card section---------------- */
+.card-section{
+    padding: 30px 0;
+}
+.card-header-text h2{
+   font-size: 30px;
+}
+.card-header-text h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.card-header-text p{
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+.card-section-child{
+    justify-content:space-evenly;
+   
+}
+.card-one{
+    margin-bottom: 20px;
+    max-width: 280px;
+}
+.card-one-image{
+    margin-bottom: 20px;
+}
+
+.social-icons{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 24%;
+}
+.social-icons a{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+.card-text h4{
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+.card-text h5{
+    font-size: 16px;
+}
+.card-text p{
+    margin-bottom: 17px;
+    font-size: 13px;
+}
+/* ---------guide card section ends------------ */
+/* ------footer section------------ */
+.footer-section{
+    padding: 30px 0;
+}
+.footer-one{
+    padding: 20px 10px;
+    width: 100%;
+}
+.logo-one{
+    width: 100px;
+    margin-bottom: 20px;
+}
+.footer-child{
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+.footer-one p{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.footer-links-one li{
+    margin: 0 0 5px;
+}
+.footer-links-one a{
+    font-size: 13px
+}
+.social-links li{
+    margin: 0 10px 0 0;
+}
+.social-links li a{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.footer-two i{
+    font-size: 14px;
+}
+.footer-one a{
+   display: inline-block;
+   color: var(--ass);
+}
+.footer-one-para{
+    font-size: 18px;
+    margin-bottom:12px;
+}
+/* ------footer section ends--------- */
+/* ------bottom-footer-------------- */
+.bottom-footer p{
+   font-size: 11px;
+}
+/* ------bottom-footer ends----------- */
+}
+@media (min-width:576px) and (max-width:767.98px) {
+
+/* ---top header------------- */
+.top-header{
+    padding: 20px 0;
+}
+.top-header-contact a{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.top-header-contact i{
+    margin: 0 5px;
+}
+.top-header-icons a{
+    font-size: 15px;
+    margin-right: 10px;
+}
+/* ---top header ends---------- */
+/* ----header-section--- */
+.header-section{
+    padding: 10px 0;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.nav-items{
+    margin-bottom: 30px;
+    max-width: 337px;
+}
+.nav-items li a{
+    margin: 0px 30px; 
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-items li{
+    margin-bottom: 10px;
+}
+.logo{
+    width: 170px;
+}
+.btn{
+    padding: 7px 25px;
+    font-size: 12px;
+ }
+/* ----header-section ends--- */
+/* -----banner section----------- */
+.banner-section{
+    padding: 280px 0;
+    height: 10vh;
+}
+.banner-section-child h1{
+    font-size: 40px;
+    margin-top: 150px
+}
+/* -----banner section ends-------- */
+/* ------guide section----------- */
+.guide-section{
+    padding: 30px 0;
+}
+.row{
+    flex-direction: column;
+}
+.guide-left {
+    width: 70%;
+    margin-bottom: 50px;
+}
+.guide-right{
+    /* text-align: center; */
+    width: 65%;
+}
+.guide-right h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.guide-right p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.guide-text{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.guide-items li{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+/* ---------guide section section------------- */
+
+/* ---------guide  card section---------------- */
+.card-section{
+    padding: 30px 0;
+}
+.card-header-text h2{
+   font-size: 30px;
+}
+.card-header-text h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.card-header-text p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.card-section-child{
+    justify-content:space-evenly;
+}
+.card-one{
+    margin-bottom: 20px;
+}
+.card-one-image{
+    margin-bottom: 20px;
+}
+
+.social-icons{
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 24%;
+}
+.social-icons a{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+.card-text h4{
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+.card-text h5{
+    font-size: 16px;
+}
+.card-text p{
+    margin-bottom: 17px;
+    font-size: 13px;
+}
+/* ---------guide card section ends------------ */
+/* ------footer section------------ */
+.footer-section{
+    padding: 40px 0;
+}
+.footer-child{
+    justify-content: center;
+    text-align: center;
+}
+.footer-two{
+    width: 50%;
+}
+.footer-three{
+    width: 50%;
+}
+.logo-one{
+    display: block;
+    width: 130px;
+    margin-bottom: 20px;
+}
+.footer-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-one p{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.footer-links-one li{
+    margin: 0 0 5px;
+}
+.footer-links-one a{
+    font-size: 13px
+}
+.social-links li{
+    margin: 0 10px 0 0;
+}
+.social-links li a{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content:center;
+}
+.footer-two i{
+    font-size: 15px;
+}
+.footer-one-para{
+    font-size: 18px;
+    margin-bottom:10px;  
+}
+
+/* ------footer section ends--------- */
+}
+@media (min-width:768px) and (max-width:991.98px) {
+
+/* ---top header------------- */
+.top-header{
+    padding: 20px 0;
+}
+.top-header-contact a{
+    font-size: 15px;
+}
+.top-header-contact i{
+    margin: 0 10px;
+}
+.top-header-icons a{
+    font-size: 15px;
+}
+/* ---top header ends---------- */
+/* ----header-section--- */
+.header-section{
+    padding: 10px 0;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.nav-items{
+    margin-bottom: 30px;
+    max-width: 337px;
+}
+.nav-items li{
+    margin-bottom: 8px;
+}
+.nav-items li a{
+    margin: 0px 20px; 
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.logo{
+    width: 170px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+/* ----header-section ends--- */
+/* -----banner section----------- */
+.banner-section{
+    padding: 280px 0;
+    height: 10vh;
+}
+.banner-section-child h1{
+    font-size: 40px;
+    margin-top: 150px
+}
+/* -----banner section ends-------- */
+/* -------guide section------------- */
+.guide-section{
+    padding: 40px 0;
+}
+.row{
+    flex-direction: column;
+}
+.guide-left {
+    width: 70%;
+    margin-bottom: 50px;
+}
+.guide-right{
+    /* text-align: center; */
+    width: 50%;
+}
+.guide-right h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.guide-right p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.guide-text{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.guide-items li{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+/* ---------guide section section------------- */
+
+/* ---------guide  card section---------------- */
+.card-section{
+    padding: 40px 0;
+}
+.card-header-text h2{
+   font-size: 30px;
+}
+.card-header-text h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.card-header-text p{
+    margin-bottom: 30px;
+}
+.card-section-child{
+    justify-content:space-evenly;
+}
+.card-one{
+    margin-bottom: 20px;
+}
+.card-one-image{
+    margin-bottom: 20px;
+}
+
+.social-icons{
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 24%;
+}
+.social-icons a{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+.card-text h4{
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+.card-text h5{
+    font-size: 16px;
+}
+.card-text p{
+    margin-bottom: 17px;
+    font-size: 13px;
+}
+/* ---------guide card section ends------------ */
+/* ------footer section------------ */
+.footer-section{
+    padding: 40px 0;
+}
+.footer-child{
+    justify-content: center;
+    text-align: center;
+}
+.footer-one{
+    padding: 30px 10px;
+}
+.footer-two{
+    width: 50%;
+}
+.footer-three{
+    width: 50%;
+}
+.logo-one{
+    display: block;
+    width: 130px;
+    margin-bottom: 20px;
+}
+.footer-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-one p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+.footer-links-one li{
+    margin: 0 0 5px;
+}
+.footer-links-one a{
+    font-size: 16px
+}
+.social-links li{
+    margin: 0 10px 0 0;
+}
+.social-links li a{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content:center;
+}
+.footer-two i{
+    font-size: 20px;
+}
+.footer-one a{
+   display: inline-block;
+}
+.footer-one-para{
+    font-size: 20px;
+    margin-bottom:20px;  
+}
+.facebook{
+    padding: 10px 13px;
+}
+.insta {
+    padding: 10px;
+}
+.youtube {
+    padding: 10px 8px;
+}
+.whatsapp {
+    padding: 10px;
+}
+
+/* ------footer section ends--------- */
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+
+/* ---top header------------- */
+.top-header{
+    padding: 20px 0;
+}
+.top-header-contact a{
+    font-size: 15px;
+}
+.top-header-contact i{
+    margin: 0 10px;
+}
+.top-header-icons a{
+    font-size: 15px;
+}
+/* ---top header ends---------- */
+/* ----header-section--- */
+.header-section{
+    padding: 10px 0;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.nav-items{
+    margin-bottom: 30px;
+    max-width: 769px;
+}
+.nav-items li{
+    margin-bottom: 20px;
+}
+.nav-items li a{
+    margin: 0px 46px; 
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.logo{
+    width: 170px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+/* ----header-section ends--- */
+/* -----banner section----------- */
+.banner-section{
+    padding: 280px 0;
+    height: 10vh;
+}
+.banner-section-child h1{
+    font-size: 45px;
+    margin-top: 150px
+}
+/* -----banner section ends-------- */
+/* ---------guide section----------------- */
+.guide-section{
+    padding: 50px 0;
+}
+.guide-right h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.guide-right p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.guide-text{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.guide-items li a{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+/* ---------guide section section------------- */
+
+/* ---------guide  card section---------------- */
+.card-section{
+    padding: 40px 0;
+}
+.card-header-text h2{
+   font-size: 35px;
+}
+.card-header-text h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.card-header-text p{
+    margin-bottom: 40px;
+}
+.card-section-child{
+    justify-content:space-evenly;
+}
+.card-one{
+    margin-bottom: 30px;
+}
+.card-one-image{
+    margin-bottom: 30px;
+}
+
+.social-icons{
+    display: flex;
+    position: absolute;
+    top: 63%;
+    left: 24%;
+}
+.social-icons a{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.card-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+.card-text h4{
+    margin-bottom: 13px;
+}
+.card-text h5{
+    font-size: 18px;
+}
+.card-text p{
+    margin-bottom: 17px;
+    font-size: 15px;
+}
+/* ---------guide card section ends------------ */
+/* ------footer section------------ */
+.footer-section{
+    padding: 50px 0;
+}
+.footer-one{
+    padding: 30px 10px;
+    width: 19%;
+}
+.logo-one{
+    width: 110px;
+    margin-bottom: 18px;
+}
+.footer-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-one p{
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 13px;
+}
+.footer-links-one a{
+    font-size: 13px
+}
+.social-links li{
+    margin: 0 10px 0 0;
+}
+.social-links li a{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-two i{
+    font-size: 14px;
+}
+.footer-one-para{
+    font-size: 18px;
+    margin-bottom:40px;
+    
+}
+.facebook{
+    padding: 10px 13px;
+}
+.insta {
+    padding: 10px;
+}
+.youtube {
+    padding: 10px 8px;
+}
+.whatsapp {
+    padding: 10px;
+}
+/* ------footer section ends--------- */
+}
+@media (min-width:1200px) and (max-width:1399.98px) {
+}
